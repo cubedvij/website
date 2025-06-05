@@ -340,7 +340,6 @@ class MainPage(ft.View):
     def on_resized(self, event):
         self._main_content.height = self.page.height
         self._main_content.width = self.page.width
-        self.build_ui()  # Rebuild for responsive layout
         self._main_content.update()
 
     async def on_view_pop(self, event):
