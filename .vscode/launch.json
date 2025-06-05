@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flet App Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/flet",
+            "args": [
+                "run",
+                "-d",
+                "-r",
+                "--web",
+                "--port",
+                "8000"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
