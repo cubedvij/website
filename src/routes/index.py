@@ -32,7 +32,7 @@ class MainPage(ft.View):
                     tooltip="Discord",
                     icon_color=ft.Colors.WHITE,
                     on_click=lambda _: self.page.launch_url(
-                        "https://discord.gg/cubedvij"
+                        "https://cubedvij.pp.ua/discord"
                     ),
                 ),
                 ft.IconButton(
@@ -48,7 +48,9 @@ class MainPage(ft.View):
                     ),
                     tooltip="Telegram",
                     icon_color=ft.Colors.WHITE,
-                    on_click=lambda _: self.page.launch_url("https://t.me/cube_dvij"),
+                    on_click=lambda _: self.page.launch_url(
+                        "https://cubedvij.pp.ua/telegram"
+                    ),
                 ),
                 ft.IconButton(
                     content=ft.Icon(
@@ -246,7 +248,7 @@ class MainPage(ft.View):
                     ),
                 },
             ),
-            on_click=lambda _: self.page.launch_url("https://cubedvij.com/rules"),
+            on_click=lambda _: self.page.launch_url("https://cubedvij.pp.ua/rules"),
         )
         # Responsive download button column
         is_mobile = self.page.width is not None and self.page.width < 500
