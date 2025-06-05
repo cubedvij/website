@@ -1,8 +1,12 @@
+import os
+
 import flet as ft
+from dotenv import load_dotenv
 
 from routes import MainPage
 from utils import setup_theme_settings
 
+load_dotenv()
 
 async def main(page: ft.Page):
     page.title = "Кубічний Двіж"
@@ -23,6 +27,7 @@ if __name__ == "__main__":
     ft.app(
         target=main,
         view=ft.WEB_BROWSER,
-        port=8080,
+        host=os.getenv("HOST", "localhost"),
+        port=os.getenv("PORT", "8550"),
         assets_dir="./assets",
     )
